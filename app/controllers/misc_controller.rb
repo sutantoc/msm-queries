@@ -7,6 +7,10 @@ class MiscController < ApplicationController
     render({ :template => "misc_templates/directors"})
   end
 
+  def youngest_director
+    render({ :template => "misc_templates/youngest_director"})
+  end
+
   def movies
     render({ :template => "misc_templates/movies"})
   end
@@ -29,4 +33,6 @@ class MiscController < ApplicationController
     @actor_id = params.fetch("actor_id")
     render({ :template => "misc_templates/actor_page"})
   end
+
+  
 end
