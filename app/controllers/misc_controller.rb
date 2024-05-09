@@ -11,6 +11,10 @@ class MiscController < ApplicationController
     render({ :template => "misc_templates/youngest_director"})
   end
 
+  def eldest_director
+    render({ :template => "misc_templates/eldest_director"})
+  end
+
   def movies
     render({ :template => "misc_templates/movies"})
   end
