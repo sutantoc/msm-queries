@@ -10,4 +10,6 @@ Rails.application.routes.draw do
   get("/directors/:director_id", { :controller => "misc", :action => "director_page"})
 
   get("/movies/:movie_id", { :controller => "misc", :action => "movie_page"})
+
+  get("actors/:actor_id", { :controller => "misc", :action => "actor_page"})
 end

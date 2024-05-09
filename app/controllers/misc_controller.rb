@@ -24,4 +24,9 @@ class MiscController < ApplicationController
     @movie_id = params.fetch("movie_id")
     render({ :template => "misc_templates/movie_page"})
   end
+
+  def actor_page
+    @actor_id = params.fetch("actor_id")
+    render({ :template => "misc_templates/actor_page"})
+  end
 end
